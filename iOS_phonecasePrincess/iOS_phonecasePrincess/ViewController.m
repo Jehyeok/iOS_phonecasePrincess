@@ -13,9 +13,62 @@
 @end
 
 @implementation ViewController
+@synthesize canvas;
+@synthesize subCanvas;
+@synthesize photoImageView;
+@synthesize tappedImageView;
 
 - (void)viewDidLoad
 {
+    subCanvas.layer.cornerRadius = 28;
+    subCanvas.layer.masksToBounds = YES;
+    
+    UIPinchGestureRecognizer *pinchRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(scale:)];
+    [pinchRecognizer setDelegate:self];
+    [self.view addGestureRecognizer:pinchRecognizer];
+    
+    UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(move:)];
+    [panRecognizer setMinimumNumberOfTouches:1];
+    [panRecognizer setMaximumNumberOfTouches:1];
+    [panRecognizer setDelegate:self];
+    [self.view addGestureRecognizer:panRecognizer];
+    
+    // 케이스 작업대 iphone5_bg.png 추가
+    UIImageView *iphone5Bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_bg.png"]];
+    iphone5Bg.frame = CGRectMake(0, 44, 320, 428);
+    iphone5Bg.alpha = 1;
+    
+    // 케이스 작업대 iphone5_phone_bg.png 추가
+    UIImageView *iphone5PhoneBg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_phonebg"]];
+    iphone5PhoneBg.frame = CGRectMake(0, 44, 320, 428);
+    iphone5PhoneBg.alpha = 1;
+    
+    // 케이스 작업대 iphone5_phone_top.png 추가
+    UIImageView *iphone5PhoneTop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_phonetop"]];
+    iphone5PhoneTop.frame = CGRectMake(0, 44, 320, 428);
+    iphone5PhoneTop.alpha = 0.8;
+    
+    // 케이스 작업대 iphone5 바깥선 추가
+    tappedImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_guide"]];
+    tappedImageView.frame = CGRectMake(0, 44, 320, 428);
+    tappedImageView.hidden = YES;
+    tappedImageView.alpha = 1;
+    
+    UIImage *photoImage = [UIImage imageNamed:@"seed.png"];
+    photoImageView = [[UIImageView alloc]initWithImage:photoImage];
+    photoImageView.frame = CGRectMake(0, 100, 200, 200);
+    photoImageView.alpha = 1.0;
+
+    [self.view addSubview:iphone5Bg];
+    [self.view addSubview:iphone5PhoneBg];
+    [self.view addSubview:subCanvas];
+    [subCanvas addSubview:photoImageView];
+    [self.view addSubview:iphone5PhoneTop];
+    [self.view addSubview:tappedImageView];
+    
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -24,6 +77,58 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - Private Methods
+
+- (void)scale:(id)sender
+{
+    if([(UIPinchGestureRecognizer*)sender state] == UIGestureRecognizerStateBegan) {
+        _lastScale = 1.0;
+    }
+    
+    CGFloat scale = 1.0 - (_lastScale - [(UIPinchGestureRecognizer*)sender scale]);
+    
+    CGAffineTransform currentTransform = photoImageView.transform;
+    CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, scale, scale);
+    
+    [photoImageView setTransform:newTransform];
+    
+    _lastScale = [(UIPinchGestureRecognizer*)sender scale];
+    
+    tappedImageView.hidden = NO;
+    subCanvas.layer.masksToBounds = NO;
+    
+    if([(UIPinchGestureRecognizer*)sender state] == UIGestureRecognizerStateEnded)
+    {
+        tappedImageView.hidden = YES;
+        subCanvas.layer.masksToBounds = YES;
+    }
+}
+
+- (void)move:(id)sender
+{
+    CGPoint translatedPoint = [(UIPanGestureRecognizer*)sender translationInView:canvas];
+    
+    if([(UIPanGestureRecognizer*)sender state] == UIGestureRecognizerStateBegan)
+    {
+        _firstX = [photoImageView center].x;
+        _firstY = [photoImageView center].y;
+    }
+    
+    translatedPoint = CGPointMake(_firstX + translatedPoint.x, _firstY + translatedPoint.y);
+    
+    [photoImageView setCenter:translatedPoint];
+    
+    tappedImageView.hidden = NO;
+    subCanvas.layer.masksToBounds = NO;
+    
+    if([(UIPinchGestureRecognizer*)sender state] == UIGestureRecognizerStateEnded)
+    {
+        tappedImageView.hidden = YES;
+        subCanvas.layer.masksToBounds = YES;
+    }
 }
 
 @end
