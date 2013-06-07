@@ -30,9 +30,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSLog(@"test");
     
     customerInfo.layer.cornerRadius = 10;
+
+    [orderInfo setContentSize:CGSizeMake(320, 1200)];
 }
 
 - (void)didReceiveMemoryWarning
