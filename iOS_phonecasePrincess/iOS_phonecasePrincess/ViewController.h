@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "OrderViewController.h"
 
 @interface ViewController : UIViewController<UIGestureRecognizerDelegate>
 {
@@ -22,6 +23,8 @@
     
     CAShapeLayer *_marque;
 }
+
+-(IBAction)goToOrderViewController:(id)sender;
 
 @property (nonatomic, retain) IBOutlet UIView *canvas;
 @property (nonatomic, retain) IBOutlet UIView *subCanvas;

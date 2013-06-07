@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "OrderViewController.h"
 
 @interface ViewController ()
 
@@ -22,6 +23,9 @@
 {
     subCanvas.layer.cornerRadius = 28;
     subCanvas.layer.masksToBounds = YES;
+    self.title = @"나만의 케이스 만들기";
+    UIBarButtonItem *completeButton = [[UIBarButtonItem alloc] initWithTitle:@"완료" style:UIBarButtonItemStylePlain target:self action:@selector(goToOrderViewController:)];
+    self.navigationItem.rightBarButtonItem = completeButton;
     
     UIPinchGestureRecognizer *pinchRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(scale:)];
     [pinchRecognizer setDelegate:self];
@@ -35,28 +39,28 @@
     
     // 케이스 작업대 iphone5_bg.png 추가
     UIImageView *iphone5Bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_bg.png"]];
-    iphone5Bg.frame = CGRectMake(0, 44, 320, 428);
+    iphone5Bg.frame = CGRectMake(0, 0, 320, 428);
     iphone5Bg.alpha = 1;
     
     // 케이스 작업대 iphone5_phone_bg.png 추가
     UIImageView *iphone5PhoneBg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_phonebg"]];
-    iphone5PhoneBg.frame = CGRectMake(0, 44, 320, 428);
+    iphone5PhoneBg.frame = CGRectMake(0, 0, 320, 428);
     iphone5PhoneBg.alpha = 1;
     
     // 케이스 작업대 iphone5_phone_top.png 추가
     UIImageView *iphone5PhoneTop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_phonetop"]];
-    iphone5PhoneTop.frame = CGRectMake(0, 44, 320, 428);
+    iphone5PhoneTop.frame = CGRectMake(0, 0, 320, 428);
     iphone5PhoneTop.alpha = 0.8;
     
     // 케이스 작업대 iphone5 바깥선 추가
     tappedImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_guide"]];
-    tappedImageView.frame = CGRectMake(0, 44, 320, 428);
+    tappedImageView.frame = CGRectMake(0, 0, 320, 428);
     tappedImageView.hidden = YES;
     tappedImageView.alpha = 1;
     
     UIImage *photoImage = [UIImage imageNamed:@"seed.png"];
     photoImageView = [[UIImageView alloc]initWithImage:photoImage];
-    photoImageView.frame = CGRectMake(0, 100, 200, 200);
+    photoImageView.frame = CGRectMake(0, 0, 200, 200);
     photoImageView.alpha = 1.0;
 
     [self.view addSubview:iphone5Bg];
@@ -65,9 +69,6 @@
     [subCanvas addSubview:photoImageView];
     [self.view addSubview:iphone5PhoneTop];
     [self.view addSubview:tappedImageView];
-    
-    
-    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -131,4 +132,10 @@
     }
 }
 
+- (IBAction)goToOrderViewController:(id)sender
+{
+    OrderViewController *orderViewController = [[OrderViewController alloc] init];
+    [self.navigationController pushViewController:orderViewController animated:YES];
+    // [self presentModalViewController:orderViewController animated:YES];
+}
 @end
