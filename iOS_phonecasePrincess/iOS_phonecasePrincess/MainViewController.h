@@ -17,13 +17,12 @@
     UIButton *discountButton;
 }
 
-@property (strong, nonatomic) UIButton *homeButton;
-@property (strong, nonatomic) UIButton *myButton;
-@property (strong, nonatomic) UIButton *cameraButton;
-@property (strong, nonatomic) UIButton *settingButton;
-@property (strong, nonatomic) UIButton *discountButton;
+@property (strong, nonatomic) IBOutlet UIButton *homeButton;
+@property (strong, nonatomic) IBOutlet UIButton *myButton;
+@property (strong, nonatomic) IBOutlet UIButton *cameraButton;
+@property (strong, nonatomic) IBOutlet UIButton *settingButton;
+@property (strong, nonatomic) IBOutlet UIButton *discountButton;
 
-- (void) addCustomElements;
-- (void) selectTab:(int)tabID;
+- (IBAction)buttonClicked:(UIButton*)sender;
 
 @end
