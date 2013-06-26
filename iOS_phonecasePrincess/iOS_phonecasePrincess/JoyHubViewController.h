@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JoyhubAPI.h"
+#import "JoyHubWebViewController.h"
 
 @interface JoyHubViewController : UIViewController
-
+{
+    JoyhubAPI *joyhub;
+    JoyHubWebViewController *joyHubWebViewController;
+}
+@property (strong, nonatomic) JoyHubWebViewController *joyHubWebViewController;
 @end

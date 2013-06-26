@@ -14,8 +14,21 @@
 
 @implementation AppDelegate
 
+//@synthesize joyHubWebViewController;
+@synthesize joyhub;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    joyhub = [[JoyhubAPI alloc] init];
+//    [joyhub InitAPI];
+    
+//    self.joyHubWebViewController = [[JoyHubWebViewController alloc] initWithNibName:@"JoyHubWebViewController" bundle:nil];
+//    
+//    [joyHubWebViewController setMainURL:[joyhub GetMainURL]];
+//    [joyHubWebViewController setShopURL:[joyhub GetShopURL]];
+//    [joyHubWebViewController setSettingURL:[joyhub GetToSettingURL]];
+//    [joyHubWebViewController setFamilyURL:[joyhub GetFamilyURL]];
+//    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     // self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
