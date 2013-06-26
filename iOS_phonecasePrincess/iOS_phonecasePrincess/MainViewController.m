@@ -14,13 +14,17 @@
 
 @implementation MainViewController
 
+@synthesize tabBarBgView, contentView;
 @synthesize homeButton, myButton, cameraButton, settingButton, discountButton;
+@synthesize gridViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     if (self) {
         self.navigationItem.title = @"폰케이스 공짜로 주는 앱";
         self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+        
+        gridViewController = [[GridViewController alloc] initWithNibName:@"GridViewController" bundle:nil];
         // Custom initialization
     }
     return self;
@@ -29,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.contentView addSubview:gridViewController.view];
     // Do any additional setup after loading the view from its nib.
 }
 
