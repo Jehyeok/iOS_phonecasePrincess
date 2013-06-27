@@ -81,14 +81,14 @@
         makeCustomCaseViewController.view.hidden = YES;
         settingViewController.view.hidden = YES;
     }
-    else if([sender isEqual:self.makeCustomCaseViewController])
+    else if([sender isEqual:self.cameraButton])
     {
         gridViewController.view.hidden = YES;
         myOrderListViewController.view.hidden = YES;
         makeCustomCaseViewController.view.hidden = NO;
         settingViewController.view.hidden = YES;
     }
-    else if([sender isEqual:self.settingViewController])
+    else if([sender isEqual:self.settingButton])
     {
         gridViewController.view.hidden = YES;
         myOrderListViewController.view.hidden = YES;

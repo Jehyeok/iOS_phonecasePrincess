@@ -1174,14 +1174,6 @@
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
-					<string key="className">GridViewController</string>
-					<string key="superclassName">UIViewController</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/GridViewController.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
 					<string key="className">MainViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
@@ -1199,7 +1191,6 @@
 						<string key="cameraButton">UIButton</string>
 						<string key="contentView">UIView</string>
 						<string key="discountButton">UIButton</string>
-						<string key="gridViewController">GridViewController</string>
 						<string key="homeButton">UIButton</string>
 						<string key="myButton">UIButton</string>
 						<string key="settingButton">UIButton</string>
@@ -1217,10 +1208,6 @@
 						<object class="IBToOneOutletInfo" key="discountButton">
 							<string key="name">discountButton</string>
 							<string key="candidateClassName">UIButton</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="gridViewController">
-							<string key="name">gridViewController</string>
-							<string key="candidateClassName">GridViewController</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="homeButton">
 							<string key="name">homeButton</string>

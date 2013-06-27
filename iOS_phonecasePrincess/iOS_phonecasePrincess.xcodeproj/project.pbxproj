@@ -181,7 +181,7 @@
 		47120265177AB8F300A6FBC9 /* joyhub_navi_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_navi_box.png; sourceTree = "<group>"; };
 		47120266177AB8F300A6FBC9 /* joyhub_refresh_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_refresh_bt.png; sourceTree = "<group>"; };
 		47120267177AB8F300A6FBC9 /* joyhub_toapp_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_toapp_bt.png; sourceTree = "<group>"; };
-		47120268177AB8F300A6FBC9 /* libJoyhubAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJoyhubAPI.a; path = "iOS_phonecasePrincess/(iOS)joyhub_sdk_1_5_1/libJoyhubAPI.a"; sourceTree = "<group>"; };
+		47120268177AB8F300A6FBC9 /* libJoyhubAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJoyhubAPI.a; sourceTree = "<group>"; };
 		4783C6EA174F4007000A3B49 /* iOS_phonecasePrincess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_phonecasePrincess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4783C6ED174F4007000A3B49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4783C6EF174F4007000A3B49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -299,6 +299,7 @@
 		47120250177AB8F100A6FBC9 /* (iOS)joyhub_sdk_1_5_1 */ = {
 			isa = PBXGroup;
 			children = (
+				47120268177AB8F300A6FBC9 /* libJoyhubAPI.a */,
 				4712025D177AB8F300A6FBC9 /* images */,
 				47120251177AB8F300A6FBC9 /* headers */,
 			);
@@ -360,7 +361,6 @@
 		4783C6EC174F4007000A3B49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				47120268177AB8F300A6FBC9 /* libJoyhubAPI.a */,
 				470C4F1C1757451E0047D9BE /* QuartzCore.framework */,
 				4783C6ED174F4007000A3B49 /* UIKit.framework */,
 				4783C6EF174F4007000A3B49 /* Foundation.framework */,
@@ -648,10 +648,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/iOS_phonecasePrincess\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS_phonecasePrincess/iOS_phonecasePrincess-Prefix.pch";
 				INFOPLIST_FILE = "iOS_phonecasePrincess/iOS_phonecasePrincess-Info.plist";
@@ -671,10 +667,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/iOS_phonecasePrincess\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS_phonecasePrincess/iOS_phonecasePrincess-Prefix.pch";
 				INFOPLIST_FILE = "iOS_phonecasePrincess/iOS_phonecasePrincess-Info.plist";

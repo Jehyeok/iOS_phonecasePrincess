@@ -22,6 +22,8 @@
     if (self) {
         // Custom initialization
 // [joyHubWebViewController ShowShopURL];
+        self.navigationItem.title = @"할인 받기";
+        [self.navigationItem.leftBarButtonItem setTitle:@"d"];
     }
     return self;
 }
