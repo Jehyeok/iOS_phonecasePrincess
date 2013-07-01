@@ -8,19 +8,39 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+// #import "ViewController.h"
+
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
+//@synthesize joyHubWebViewController;
+@synthesize joyhub;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    joyhub = [[JoyhubAPI alloc] init];
+//    [joyhub InitAPI];
+    
+//    self.joyHubWebViewController = [[JoyHubWebViewController alloc] initWithNibName:@"JoyHubWebViewController" bundle:nil];
+//    
+//    [joyHubWebViewController setMainURL:[joyhub GetMainURL]];
+//    [joyHubWebViewController setShopURL:[joyhub GetShopURL]];
+//    [joyHubWebViewController setSettingURL:[joyhub GetToSettingURL]];
+//    [joyHubWebViewController setFamilyURL:[joyhub GetFamilyURL]];
+  
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    // self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    self.mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     // self.window.rootViewController = self.viewController;
-    self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
-    self.window.rootViewController = self.navController;
+    // self.navController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+
+//    self.navController = [[UINavigationController alloc] initWithRootViewController:self.mainViewController];
+//    self.window.rootViewController = self.navController;
     
+    /****** nav bar test ******/
+    self.window.rootViewController = self.mainViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
