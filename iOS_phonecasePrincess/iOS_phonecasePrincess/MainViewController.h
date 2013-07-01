@@ -35,6 +35,7 @@
 @property (strong, nonatomic) MakeCustomCaseViewController *makeCustomCaseViewController;
 @property (strong, nonatomic) SettingViewController *settingViewController;
 @property (strong, nonatomic) JoyHubViewController *joyHubViewController;
+@property (strong, nonatomic) UIViewController *popToSelectPhone;
 
 @property (strong, nonatomic) IBOutlet UIButton *homeButton;
 @property (strong, nonatomic) IBOutlet UIButton *myButton;

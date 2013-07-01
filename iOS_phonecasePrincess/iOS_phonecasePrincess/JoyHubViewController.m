@@ -22,8 +22,7 @@
     if (self) {
         // Custom initialization
 // [joyHubWebViewController ShowShopURL];
-        self.navigationItem.title = @"할인 받기";
-        [self.navigationItem.leftBarButtonItem setTitle:@"d"];
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg.png"]];
     }
     return self;
 }
@@ -40,4 +39,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)backBtn:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

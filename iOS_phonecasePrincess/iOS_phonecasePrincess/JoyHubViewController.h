@@ -16,4 +16,6 @@
     JoyHubWebViewController *joyHubWebViewController;
 }
 @property (strong, nonatomic) JoyHubWebViewController *joyHubWebViewController;
+
+- (IBAction)backBtn:(id)sender;
 @end
