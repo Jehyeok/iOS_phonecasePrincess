@@ -12,6 +12,7 @@
 #import "MakeCustomCaseViewController.h"
 #import "SettingViewController.h"
 #import "JoyHubViewController.h"
+#import "IPhone5ViewController.h"
 
 @interface MainViewController : UIViewController
 {
@@ -26,6 +27,7 @@
     MakeCustomCaseViewController *makeCustomCaseViewController;
     SettingViewController *settingViewController;
     JoyHubViewController *joyHubViewController;
+    IPhone5ViewController *iPhone5ViewController;
     
     UIView *contentView;
 }
@@ -35,7 +37,7 @@
 @property (strong, nonatomic) MakeCustomCaseViewController *makeCustomCaseViewController;
 @property (strong, nonatomic) SettingViewController *settingViewController;
 @property (strong, nonatomic) JoyHubViewController *joyHubViewController;
-@property (strong, nonatomic) UIViewController *popToSelectPhone;
+@property (strong, nonatomic) IPhone5ViewController *iPhone5ViewController;
 
 @property (strong, nonatomic) IBOutlet UIButton *homeButton;
 @property (strong, nonatomic) IBOutlet UIButton *myButton;
@@ -45,6 +47,8 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *tabBarBgView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
+
+- (void)setButtonState:(UIButton*)sender;
 
 - (IBAction)buttonClicked:(UIButton*)sender;
 

@@ -34,13 +34,39 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "iOS_phonecasePrincess/MainViewController.m"
-         timestampString = "394353973.442054"
+         timestampString = "394359891.210068"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "35"
          endingLineNumber = "35"
          landmarkName = "-initWithNibName:bundle:"
          landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "iOS_phonecasePrincess/MainViewController.m"
+         timestampString = "394356143.404351"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "32"
+         endingLineNumber = "32"
+         landmarkName = "-initWithNibName:bundle:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "iOS_phonecasePrincess/IPhone5_ViewController.m"
+         timestampString = "394364326.180565"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "15"
+         endingLineNumber = "15"
+         landmarkName = "@implementation IPhone5_ViewController"
+         landmarkType = "3">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

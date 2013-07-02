@@ -16,7 +16,7 @@
 
 @synthesize tabBarBgView, contentView;
 @synthesize homeButton, myButton, cameraButton, settingButton, discountButton;
-@synthesize gridViewController, myOrderListViewController, makeCustomCaseViewController, settingViewController, joyHubViewController, popToSelectPhone;
+@synthesize gridViewController, myOrderListViewController, makeCustomCaseViewController, settingViewController, joyHubViewController, iPhone5ViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +29,7 @@
         makeCustomCaseViewController = [[MakeCustomCaseViewController alloc] initWithNibName:@"MakeCustomCaseViewController" bundle:nil];
         settingViewController = [[SettingViewController alloc] initWithNibName:@"SettingViewController" bundle:nil];
         joyHubViewController = [[JoyHubViewController alloc] initWithNibName:@"JoyHubViewController" bundle:nil];
-        popToSelectPhone = [[UIViewController alloc] initWithNibName:@"UIViewController" bundle:nil];
+        iPhone5ViewController = [[IPhone5ViewController alloc] initWithNibName:@"IPhone5ViewController" bundle:nil];
         // Custom initialization
     }
     return self;
@@ -58,7 +58,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonClicked:(UIButton*)sender
+- (void)setButtonState:(UIButton *)sender
 {
     self.homeButton.selected = NO;
     self.myButton.selected = NO;
@@ -67,6 +67,10 @@
     self.discountButton.selected = NO;
     
     sender.selected = YES;
+}
+
+- (IBAction)buttonClicked:(UIButton*)sender
+{
     
     if([sender isEqual:self.homeButton])
     {
@@ -74,6 +78,7 @@
         myOrderListViewController.view.hidden = YES;
         makeCustomCaseViewController.view.hidden = YES;
         settingViewController.view.hidden = YES;
+        [self setButtonState:sender];
     }
     else if([sender isEqual:self.myButton])
     {
@@ -81,17 +86,12 @@
         myOrderListViewController.view.hidden = NO;
         makeCustomCaseViewController.view.hidden = YES;
         settingViewController.view.hidden = YES;
+        [self setButtonState:sender];
     }
     else if([sender isEqual:self.cameraButton])
     {
-        popToSelectPhone.modalPresentationStyle = UIModalPresentationFormSheet;
-        popToSelectPhone.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-        [self presentViewController:popToSelectPhone animated:YES completion:nil];
-        
-        gridViewController.view.hidden = YES;
-        myOrderListViewController.view.hidden = YES;
-        makeCustomCaseViewController.view.hidden = NO;
-        settingViewController.view.hidden = YES;
+        iPhone5ViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:iPhone5ViewController animated:YES completion:nil];
     }
     else if([sender isEqual:self.settingButton])
     {
@@ -99,6 +99,7 @@
         myOrderListViewController.view.hidden = YES;
         makeCustomCaseViewController.view.hidden = YES;
         settingViewController.view.hidden = NO;
+        [self setButtonState:sender];
     }
     else if([sender isEqual:self.discountButton])
     {
@@ -107,6 +108,7 @@
 //        joyHubViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
         [self presentViewController:joyHubViewController animated:YES completion:nil];
     }
+
 }
 
 @end

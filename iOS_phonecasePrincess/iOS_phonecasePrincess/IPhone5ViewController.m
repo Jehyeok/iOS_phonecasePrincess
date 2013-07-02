@@ -1,23 +1,30 @@
 //
-//  ViewController.m
+//  IPhone5_ViewController.m
 //  iOS_phonecasePrincess
 //
-//  Created by Jehyeok on 5/24/13.
+//  Created by Jehyeok on 7/1/13.
 //  Copyright (c) 2013 aurumplanet. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "OrderViewController.h"
+#import "IPhone5ViewController.h"
 
-@interface ViewController ()
+@interface IPhone5ViewController ()
 
 @end
 
-@implementation ViewController
-@synthesize canvas;
-@synthesize subCanvas;
-@synthesize photoImageView;
-@synthesize tappedImageView;
+@implementation IPhone5ViewController
+
+@synthesize canvas, subCanvas, photoImageView, tappedImageView, confirmBuyingViewController;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+        confirmBuyingViewController = [[ConfirmBuyingViewController alloc] initWithNibName:@"ConfirmBuyingViewController" bundle:nil];
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -39,30 +46,30 @@
     
     // 케이스 작업대 iphone5_bg.png 추가
     UIImageView *iphone5Bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_bg.png"]];
-    iphone5Bg.frame = CGRectMake(0, 0, 320, 428);
+    iphone5Bg.frame = CGRectMake(0, 45, 320, 428);
     iphone5Bg.alpha = 1;
     
     // 케이스 작업대 iphone5_phone_bg.png 추가
     UIImageView *iphone5PhoneBg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_phonebg"]];
-    iphone5PhoneBg.frame = CGRectMake(0, 0, 320, 428);
+    iphone5PhoneBg.frame = CGRectMake(0, 45, 320, 428);
     iphone5PhoneBg.alpha = 1;
     
     // 케이스 작업대 iphone5_phone_top.png 추가
     UIImageView *iphone5PhoneTop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_phonetop"]];
-    iphone5PhoneTop.frame = CGRectMake(0, 0, 320, 428);
+    iphone5PhoneTop.frame = CGRectMake(0, 45, 320, 428);
     iphone5PhoneTop.alpha = 0.8;
     
     // 케이스 작업대 iphone5 바깥선 추가
     tappedImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"480x800_나만의케이스_작업대_iphone5_guide"]];
-    tappedImageView.frame = CGRectMake(0, 0, 320, 428);
+    tappedImageView.frame = CGRectMake(0, 45, 320, 428);
     tappedImageView.hidden = YES;
     tappedImageView.alpha = 1;
     
     UIImage *photoImage = [UIImage imageNamed:@"seed.png"];
     photoImageView = [[UIImageView alloc]initWithImage:photoImage];
-    photoImageView.frame = CGRectMake(0, 0, 200, 200);
+    photoImageView.frame = CGRectMake(0, 60, 200, 200);
     photoImageView.alpha = 1.0;
-
+    
     [self.view addSubview:iphone5Bg];
     [self.view addSubview:iphone5PhoneBg];
     [self.view addSubview:subCanvas];
@@ -132,10 +139,16 @@
     }
 }
 
-- (IBAction)goToOrderViewController:(id)sender
+- (IBAction)backBtn:(id)sender
 {
-    OrderViewController *orderViewController = [[OrderViewController alloc] init];
-    [self.navigationController pushViewController:orderViewController animated:YES];
-    // [self presentModalViewController:orderViewController animated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)confirmBuying:(id)sender
+{
+//    [self.view addSubview:confirmBuyingViewController.view];
+    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 548)];
+    [self.view addSubview:v1];
+}
+
 @end

@@ -78,6 +78,10 @@
 		47120272177AB8F300A6FBC9 /* joyhub_refresh_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120266177AB8F300A6FBC9 /* joyhub_refresh_bt.png */; };
 		47120273177AB8F300A6FBC9 /* joyhub_toapp_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120267177AB8F300A6FBC9 /* joyhub_toapp_bt.png */; };
 		47120274177AB8F300A6FBC9 /* libJoyhubAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47120268177AB8F300A6FBC9 /* libJoyhubAPI.a */; };
+		471B1CBD1781856100DF1535 /* IPhone5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471B1CBB1781856100DF1535 /* IPhone5ViewController.m */; };
+		471B1CBE1781856100DF1535 /* IPhone5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471B1CBC1781856100DF1535 /* IPhone5ViewController.xib */; };
+		471B1CC21781935600DF1535 /* ConfirmBuyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471B1CC01781935400DF1535 /* ConfirmBuyingViewController.m */; };
+		471B1CC31781935600DF1535 /* ConfirmBuyingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471B1CC11781935500DF1535 /* ConfirmBuyingViewController.xib */; };
 		4783C6EE174F4007000A3B49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4783C6ED174F4007000A3B49 /* UIKit.framework */; };
 		4783C6F0174F4007000A3B49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4783C6EF174F4007000A3B49 /* Foundation.framework */; };
 		4783C6F2174F4007000A3B49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4783C6F1174F4007000A3B49 /* CoreGraphics.framework */; };
@@ -87,8 +91,6 @@
 		4783C700174F4007000A3B49 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4783C6FF174F4007000A3B49 /* Default.png */; };
 		4783C702174F4007000A3B49 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4783C701174F4007000A3B49 /* Default@2x.png */; };
 		4783C704174F4007000A3B49 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4783C703174F4007000A3B49 /* Default-568h@2x.png */; };
-		4783C707174F4007000A3B49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4783C706174F4007000A3B49 /* ViewController.m */; };
-		4783C70A174F4007000A3B49 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4783C708174F4007000A3B49 /* ViewController.xib */; };
 		47ACBB64175F483E004C1120 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 47ACBB63175F483E004C1120 /* bg.png */; };
 		47ACBB6B175F4B07004C1120 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47ACBB69175F4B07004C1120 /* OrderViewController.m */; };
 		47ACBB6C175F4B07004C1120 /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ACBB6A175F4B07004C1120 /* OrderViewController.xib */; };
@@ -182,6 +184,14 @@
 		47120266177AB8F300A6FBC9 /* joyhub_refresh_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_refresh_bt.png; sourceTree = "<group>"; };
 		47120267177AB8F300A6FBC9 /* joyhub_toapp_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_toapp_bt.png; sourceTree = "<group>"; };
 		47120268177AB8F300A6FBC9 /* libJoyhubAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJoyhubAPI.a; sourceTree = "<group>"; };
+		471B1CB617816A7800DF1535 /* SBTableAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBTableAlert.h; sourceTree = "<group>"; };
+		471B1CB717816A7A00DF1535 /* SBTableAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBTableAlert.m; sourceTree = "<group>"; };
+		471B1CBA1781856100DF1535 /* IPhone5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhone5ViewController.h; sourceTree = "<group>"; };
+		471B1CBB1781856100DF1535 /* IPhone5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPhone5ViewController.m; sourceTree = "<group>"; };
+		471B1CBC1781856100DF1535 /* IPhone5ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IPhone5ViewController.xib; sourceTree = "<group>"; };
+		471B1CBF1781935300DF1535 /* ConfirmBuyingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmBuyingViewController.h; sourceTree = "<group>"; };
+		471B1CC01781935400DF1535 /* ConfirmBuyingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmBuyingViewController.m; sourceTree = "<group>"; };
+		471B1CC11781935500DF1535 /* ConfirmBuyingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmBuyingViewController.xib; sourceTree = "<group>"; };
 		4783C6EA174F4007000A3B49 /* iOS_phonecasePrincess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_phonecasePrincess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4783C6ED174F4007000A3B49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4783C6EF174F4007000A3B49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -195,9 +205,6 @@
 		4783C6FF174F4007000A3B49 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4783C701174F4007000A3B49 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4783C703174F4007000A3B49 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4783C705174F4007000A3B49 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4783C706174F4007000A3B49 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4783C709174F4007000A3B49 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		47ACBB63175F483E004C1120 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		47ACBB68175F4B07004C1120 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
 		47ACBB69175F4B07004C1120 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
@@ -372,6 +379,8 @@
 		4783C6F3174F4007000A3B49 /* iOS_phonecasePrincess */ = {
 			isa = PBXGroup;
 			children = (
+				471B1CB617816A7800DF1535 /* SBTableAlert.h */,
+				471B1CB717816A7A00DF1535 /* SBTableAlert.m */,
 				47120250177AB8F100A6FBC9 /* (iOS)joyhub_sdk_1_5_1 */,
 				4712023B177AB7C300A6FBC9 /* btnImg */,
 				47120202177A9FD600A6FBC9 /* navbarImg */,
@@ -379,9 +388,6 @@
 				470C4F0F175731440047D9BE /* img */,
 				4783C6FC174F4007000A3B49 /* AppDelegate.h */,
 				4783C6FD174F4007000A3B49 /* AppDelegate.m */,
-				4783C705174F4007000A3B49 /* ViewController.h */,
-				4783C706174F4007000A3B49 /* ViewController.m */,
-				4783C708174F4007000A3B49 /* ViewController.xib */,
 				4783C6F4174F4007000A3B49 /* Supporting Files */,
 				47ACBB68175F4B07004C1120 /* OrderViewController.h */,
 				47ACBB69175F4B07004C1120 /* OrderViewController.m */,
@@ -404,6 +410,12 @@
 				47120236177AA36B00A6FBC9 /* MakeCustomCaseViewController.h */,
 				47120237177AA36C00A6FBC9 /* MakeCustomCaseViewController.m */,
 				47120238177AA36D00A6FBC9 /* MakeCustomCaseViewController.xib */,
+				471B1CBA1781856100DF1535 /* IPhone5ViewController.h */,
+				471B1CBB1781856100DF1535 /* IPhone5ViewController.m */,
+				471B1CBC1781856100DF1535 /* IPhone5ViewController.xib */,
+				471B1CBF1781935300DF1535 /* ConfirmBuyingViewController.h */,
+				471B1CC01781935400DF1535 /* ConfirmBuyingViewController.m */,
+				471B1CC11781935500DF1535 /* ConfirmBuyingViewController.xib */,
 			);
 			path = iOS_phonecasePrincess;
 			sourceTree = "<group>";
@@ -477,7 +489,6 @@
 				4783C700174F4007000A3B49 /* Default.png in Resources */,
 				4783C702174F4007000A3B49 /* Default@2x.png in Resources */,
 				4783C704174F4007000A3B49 /* Default-568h@2x.png in Resources */,
-				4783C70A174F4007000A3B49 /* ViewController.xib in Resources */,
 				470C4F16175731650047D9BE /* 480x800_나만의케이스_작업대_iphone5_guide.png in Resources */,
 				470C4F17175731650047D9BE /* 480x800_나만의케이스_작업대_iphone5_phonebg.png in Resources */,
 				470C4F18175731650047D9BE /* 480x800_나만의케이스_작업대_iphone5_phonetop.png in Resources */,
@@ -543,6 +554,8 @@
 				47120271177AB8F300A6FBC9 /* joyhub_navi_box.png in Resources */,
 				47120272177AB8F300A6FBC9 /* joyhub_refresh_bt.png in Resources */,
 				47120273177AB8F300A6FBC9 /* joyhub_toapp_bt.png in Resources */,
+				471B1CBE1781856100DF1535 /* IPhone5ViewController.xib in Resources */,
+				471B1CC31781935600DF1535 /* ConfirmBuyingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,7 +568,6 @@
 			files = (
 				4783C6FA174F4007000A3B49 /* main.m in Sources */,
 				4783C6FE174F4007000A3B49 /* AppDelegate.m in Sources */,
-				4783C707174F4007000A3B49 /* ViewController.m in Sources */,
 				47ACBB6B175F4B07004C1120 /* OrderViewController.m in Sources */,
 				471201FB1779A60E00A6FBC9 /* MainViewController.m in Sources */,
 				47120200177A91C300A6FBC9 /* GridViewController.m in Sources */,
@@ -563,6 +575,8 @@
 				4712022F177AA31600A6FBC9 /* MyOrderListViewController.m in Sources */,
 				47120234177AA33500A6FBC9 /* SettingViewController.m in Sources */,
 				47120239177AA36E00A6FBC9 /* MakeCustomCaseViewController.m in Sources */,
+				471B1CBD1781856100DF1535 /* IPhone5ViewController.m in Sources */,
+				471B1CC21781935600DF1535 /* ConfirmBuyingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,14 +589,6 @@
 				4783C6F7174F4007000A3B49 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		4783C708174F4007000A3B49 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4783C709174F4007000A3B49 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
