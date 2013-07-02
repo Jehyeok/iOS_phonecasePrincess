@@ -14,7 +14,7 @@
 
 @implementation JoyHubViewController
 
-@synthesize joyHubWebViewController;
+//@synthesize joyHubWebViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

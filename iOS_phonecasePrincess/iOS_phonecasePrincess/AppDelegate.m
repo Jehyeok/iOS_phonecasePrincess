@@ -15,7 +15,7 @@
 @implementation AppDelegate
 
 //@synthesize joyHubWebViewController;
-@synthesize joyhub;
+//@synthesize joyhub;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

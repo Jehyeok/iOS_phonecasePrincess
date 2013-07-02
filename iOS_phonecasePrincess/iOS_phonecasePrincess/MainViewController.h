@@ -14,7 +14,7 @@
 #import "JoyHubViewController.h"
 #import "IPhone5ViewController.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UIActionSheetDelegate>
 {
     UIButton *homeButton;
     UIButton *myButton;

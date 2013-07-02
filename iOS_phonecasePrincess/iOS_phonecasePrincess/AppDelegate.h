@@ -7,18 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JoyhubAPI.h"
+//#import "JoyhubAPI.h"
 //#import "JoyHubWebViewController.h"
 
 @class MainViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
-    JoyhubAPI *joyhub;
+//    JoyhubAPI *joyhub;
 //    JoyHubWebViewController *joyHubWebViewController;
 }
 
-@property (strong, nonatomic) JoyhubAPI *joyhub;
+//@property (strong, nonatomic) JoyhubAPI *joyhub;
 
 //@property (strong, nonatomic) JoyHubWebViewController *joyHubWebViewController;
 

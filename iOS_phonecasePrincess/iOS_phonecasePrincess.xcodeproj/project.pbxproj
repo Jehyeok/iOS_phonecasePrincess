@@ -12,7 +12,6 @@
 		470C4F18175731650047D9BE /* 480x800_나만의케이스_작업대_iphone5_phonetop.png in Resources */ = {isa = PBXBuildFile; fileRef = 470C4F13175731650047D9BE /* 480x800_나만의케이스_작업대_iphone5_phonetop.png */; };
 		470C4F19175731650047D9BE /* 480x800_나만의케이스_작업대_whitebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 470C4F14175731650047D9BE /* 480x800_나만의케이스_작업대_whitebg.png */; };
 		470C4F1B175732510047D9BE /* 480x800_나만의케이스_작업대_iphone5_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 470C4F1A175732510047D9BE /* 480x800_나만의케이스_작업대_iphone5_bg.png */; };
-		470C4F1D1757451E0047D9BE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4F1C1757451E0047D9BE /* QuartzCore.framework */; };
 		470C4F1F17574CB00047D9BE /* seed.png in Resources */ = {isa = PBXBuildFile; fileRef = 470C4F1E17574CB00047D9BE /* seed.png */; };
 		471201DD177992AA00A6FBC9 /* 480x800_tabbar_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 471201D1177992AA00A6FBC9 /* 480x800_tabbar_bg.png */; };
 		471201DE177992AA00A6FBC9 /* 480x800_tabbar_btn_my_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 471201D2177992AA00A6FBC9 /* 480x800_tabbar_btn_my_on.png */; };
@@ -66,22 +65,23 @@
 		4712024D177AB7C400A6FBC9 /* 480x800_주문하기_btn_search_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120243177AB7C400A6FBC9 /* 480x800_주문하기_btn_search_on.png */; };
 		4712024E177AB7C400A6FBC9 /* 480x800_주문하기_btn_결제하기.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120244177AB7C400A6FBC9 /* 480x800_주문하기_btn_결제하기.png */; };
 		4712024F177AB7C400A6FBC9 /* 480x800_주문하기_btn_결제하기_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120245177AB7C400A6FBC9 /* 480x800_주문하기_btn_결제하기_on.png */; };
-		47120269177AB8F300A6FBC9 /* JoyHubWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4712025B177AB8F300A6FBC9 /* JoyHubWebViewController.xib */; };
-		4712026A177AB8F300A6FBC9 /* joyhub_afhudbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 4712025E177AB8F300A6FBC9 /* joyhub_afhudbox.png */; };
-		4712026B177AB8F300A6FBC9 /* joyhub_back_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 4712025F177AB8F300A6FBC9 /* joyhub_back_bt.png */; };
-		4712026C177AB8F300A6FBC9 /* joyhub_btn_controll.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120260177AB8F300A6FBC9 /* joyhub_btn_controll.png */; };
-		4712026D177AB8F300A6FBC9 /* joyhub_btn_familiy.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120261177AB8F300A6FBC9 /* joyhub_btn_familiy.png */; };
-		4712026E177AB8F300A6FBC9 /* joyhub_btn_joyhub_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120262177AB8F300A6FBC9 /* joyhub_btn_joyhub_setting.png */; };
-		4712026F177AB8F300A6FBC9 /* joyhub_btn_mypage.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120263177AB8F300A6FBC9 /* joyhub_btn_mypage.png */; };
-		47120270177AB8F300A6FBC9 /* joyhub_btn_point_station.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120264177AB8F300A6FBC9 /* joyhub_btn_point_station.png */; };
-		47120271177AB8F300A6FBC9 /* joyhub_navi_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120265177AB8F300A6FBC9 /* joyhub_navi_box.png */; };
-		47120272177AB8F300A6FBC9 /* joyhub_refresh_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120266177AB8F300A6FBC9 /* joyhub_refresh_bt.png */; };
-		47120273177AB8F300A6FBC9 /* joyhub_toapp_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 47120267177AB8F300A6FBC9 /* joyhub_toapp_bt.png */; };
-		47120274177AB8F300A6FBC9 /* libJoyhubAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47120268177AB8F300A6FBC9 /* libJoyhubAPI.a */; };
 		471B1CBD1781856100DF1535 /* IPhone5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471B1CBB1781856100DF1535 /* IPhone5ViewController.m */; };
 		471B1CBE1781856100DF1535 /* IPhone5ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471B1CBC1781856100DF1535 /* IPhone5ViewController.xib */; };
 		471B1CC21781935600DF1535 /* ConfirmBuyingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471B1CC01781935400DF1535 /* ConfirmBuyingViewController.m */; };
 		471B1CC31781935600DF1535 /* ConfirmBuyingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471B1CC11781935500DF1535 /* ConfirmBuyingViewController.xib */; };
+		476075331782C3F100413241 /* JoyHubWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 476075251782C3F100413241 /* JoyHubWebViewController.xib */; };
+		476075341782C3F100413241 /* joyhub_afhudbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 476075281782C3F100413241 /* joyhub_afhudbox.png */; };
+		476075351782C3F100413241 /* joyhub_back_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 476075291782C3F100413241 /* joyhub_back_bt.png */; };
+		476075361782C3F100413241 /* joyhub_btn_controll.png in Resources */ = {isa = PBXBuildFile; fileRef = 4760752A1782C3F100413241 /* joyhub_btn_controll.png */; };
+		476075371782C3F100413241 /* joyhub_btn_familiy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4760752B1782C3F100413241 /* joyhub_btn_familiy.png */; };
+		476075381782C3F100413241 /* joyhub_btn_joyhub_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 4760752C1782C3F100413241 /* joyhub_btn_joyhub_setting.png */; };
+		476075391782C3F100413241 /* joyhub_btn_mypage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4760752D1782C3F100413241 /* joyhub_btn_mypage.png */; };
+		4760753A1782C3F100413241 /* joyhub_btn_point_station.png in Resources */ = {isa = PBXBuildFile; fileRef = 4760752E1782C3F100413241 /* joyhub_btn_point_station.png */; };
+		4760753B1782C3F100413241 /* joyhub_navi_box.png in Resources */ = {isa = PBXBuildFile; fileRef = 4760752F1782C3F100413241 /* joyhub_navi_box.png */; };
+		4760753C1782C3F100413241 /* joyhub_refresh_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 476075301782C3F100413241 /* joyhub_refresh_bt.png */; };
+		4760753D1782C3F100413241 /* joyhub_toapp_bt.png in Resources */ = {isa = PBXBuildFile; fileRef = 476075311782C3F100413241 /* joyhub_toapp_bt.png */; };
+		4760753E1782C3F100413241 /* libJoyhubAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 476075321782C3F100413241 /* libJoyhubAPI.a */; };
+		4760753F1782CAF700413241 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 470C4F1C1757451E0047D9BE /* QuartzCore.framework */; };
 		4783C6EE174F4007000A3B49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4783C6ED174F4007000A3B49 /* UIKit.framework */; };
 		4783C6F0174F4007000A3B49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4783C6EF174F4007000A3B49 /* Foundation.framework */; };
 		4783C6F2174F4007000A3B49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4783C6F1174F4007000A3B49 /* CoreGraphics.framework */; };
@@ -162,36 +162,34 @@
 		47120243177AB7C400A6FBC9 /* 480x800_주문하기_btn_search_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480x800_주문하기_btn_search_on.png"; sourceTree = "<group>"; };
 		47120244177AB7C400A6FBC9 /* 480x800_주문하기_btn_결제하기.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480x800_주문하기_btn_결제하기.png"; sourceTree = "<group>"; };
 		47120245177AB7C400A6FBC9 /* 480x800_주문하기_btn_결제하기_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "480x800_주문하기_btn_결제하기_on.png"; sourceTree = "<group>"; };
-		47120252177AB8F300A6FBC9 /* AFProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFProgressHud.h; sourceTree = "<group>"; };
-		47120253177AB8F300A6FBC9 /* JoyhubAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubAPI.h; sourceTree = "<group>"; };
-		47120254177AB8F300A6FBC9 /* JoyhubConsumePointConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubConsumePointConnection.h; sourceTree = "<group>"; };
-		47120255177AB8F300A6FBC9 /* JoyhubInitConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubInitConnection.h; sourceTree = "<group>"; };
-		47120256177AB8F300A6FBC9 /* JoyhubNotifyInstalledAppConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubNotifyInstalledAppConnection.h; sourceTree = "<group>"; };
-		47120257177AB8F300A6FBC9 /* JoyhubSendAchievementConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubSendAchievementConnection.h; sourceTree = "<group>"; };
-		47120258177AB8F300A6FBC9 /* JoyhubSendscoreConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubSendscoreConnection.h; sourceTree = "<group>"; };
-		47120259177AB8F300A6FBC9 /* JoyhubUpdatePPIAppInfoConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubUpdatePPIAppInfoConnection.h; sourceTree = "<group>"; };
-		4712025A177AB8F300A6FBC9 /* JoyHubWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyHubWebViewController.h; sourceTree = "<group>"; };
-		4712025B177AB8F300A6FBC9 /* JoyHubWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoyHubWebViewController.xib; sourceTree = "<group>"; };
-		4712025C177AB8F300A6FBC9 /* PPIApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPIApp.h; sourceTree = "<group>"; };
-		4712025E177AB8F300A6FBC9 /* joyhub_afhudbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_afhudbox.png; sourceTree = "<group>"; };
-		4712025F177AB8F300A6FBC9 /* joyhub_back_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_back_bt.png; sourceTree = "<group>"; };
-		47120260177AB8F300A6FBC9 /* joyhub_btn_controll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_controll.png; sourceTree = "<group>"; };
-		47120261177AB8F300A6FBC9 /* joyhub_btn_familiy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_familiy.png; sourceTree = "<group>"; };
-		47120262177AB8F300A6FBC9 /* joyhub_btn_joyhub_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_joyhub_setting.png; sourceTree = "<group>"; };
-		47120263177AB8F300A6FBC9 /* joyhub_btn_mypage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_mypage.png; sourceTree = "<group>"; };
-		47120264177AB8F300A6FBC9 /* joyhub_btn_point_station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_point_station.png; sourceTree = "<group>"; };
-		47120265177AB8F300A6FBC9 /* joyhub_navi_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_navi_box.png; sourceTree = "<group>"; };
-		47120266177AB8F300A6FBC9 /* joyhub_refresh_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_refresh_bt.png; sourceTree = "<group>"; };
-		47120267177AB8F300A6FBC9 /* joyhub_toapp_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_toapp_bt.png; sourceTree = "<group>"; };
-		47120268177AB8F300A6FBC9 /* libJoyhubAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJoyhubAPI.a; sourceTree = "<group>"; };
-		471B1CB617816A7800DF1535 /* SBTableAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBTableAlert.h; sourceTree = "<group>"; };
-		471B1CB717816A7A00DF1535 /* SBTableAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBTableAlert.m; sourceTree = "<group>"; };
 		471B1CBA1781856100DF1535 /* IPhone5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPhone5ViewController.h; sourceTree = "<group>"; };
 		471B1CBB1781856100DF1535 /* IPhone5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPhone5ViewController.m; sourceTree = "<group>"; };
 		471B1CBC1781856100DF1535 /* IPhone5ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IPhone5ViewController.xib; sourceTree = "<group>"; };
 		471B1CBF1781935300DF1535 /* ConfirmBuyingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmBuyingViewController.h; sourceTree = "<group>"; };
 		471B1CC01781935400DF1535 /* ConfirmBuyingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmBuyingViewController.m; sourceTree = "<group>"; };
 		471B1CC11781935500DF1535 /* ConfirmBuyingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmBuyingViewController.xib; sourceTree = "<group>"; };
+		4760751C1782C3F100413241 /* AFProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFProgressHud.h; sourceTree = "<group>"; };
+		4760751D1782C3F100413241 /* JoyhubAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubAPI.h; sourceTree = "<group>"; };
+		4760751E1782C3F100413241 /* JoyhubConsumePointConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubConsumePointConnection.h; sourceTree = "<group>"; };
+		4760751F1782C3F100413241 /* JoyhubInitConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubInitConnection.h; sourceTree = "<group>"; };
+		476075201782C3F100413241 /* JoyhubNotifyInstalledAppConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubNotifyInstalledAppConnection.h; sourceTree = "<group>"; };
+		476075211782C3F100413241 /* JoyhubSendAchievementConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubSendAchievementConnection.h; sourceTree = "<group>"; };
+		476075221782C3F100413241 /* JoyhubSendscoreConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubSendscoreConnection.h; sourceTree = "<group>"; };
+		476075231782C3F100413241 /* JoyhubUpdatePPIAppInfoConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyhubUpdatePPIAppInfoConnection.h; sourceTree = "<group>"; };
+		476075241782C3F100413241 /* JoyHubWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoyHubWebViewController.h; sourceTree = "<group>"; };
+		476075251782C3F100413241 /* JoyHubWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JoyHubWebViewController.xib; sourceTree = "<group>"; };
+		476075261782C3F100413241 /* PPIApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPIApp.h; sourceTree = "<group>"; };
+		476075281782C3F100413241 /* joyhub_afhudbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_afhudbox.png; sourceTree = "<group>"; };
+		476075291782C3F100413241 /* joyhub_back_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_back_bt.png; sourceTree = "<group>"; };
+		4760752A1782C3F100413241 /* joyhub_btn_controll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_controll.png; sourceTree = "<group>"; };
+		4760752B1782C3F100413241 /* joyhub_btn_familiy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_familiy.png; sourceTree = "<group>"; };
+		4760752C1782C3F100413241 /* joyhub_btn_joyhub_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_joyhub_setting.png; sourceTree = "<group>"; };
+		4760752D1782C3F100413241 /* joyhub_btn_mypage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_mypage.png; sourceTree = "<group>"; };
+		4760752E1782C3F100413241 /* joyhub_btn_point_station.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_btn_point_station.png; sourceTree = "<group>"; };
+		4760752F1782C3F100413241 /* joyhub_navi_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_navi_box.png; sourceTree = "<group>"; };
+		476075301782C3F100413241 /* joyhub_refresh_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_refresh_bt.png; sourceTree = "<group>"; };
+		476075311782C3F100413241 /* joyhub_toapp_bt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joyhub_toapp_bt.png; sourceTree = "<group>"; };
+		476075321782C3F100413241 /* libJoyhubAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJoyhubAPI.a; sourceTree = "<group>"; };
 		4783C6EA174F4007000A3B49 /* iOS_phonecasePrincess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_phonecasePrincess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4783C6ED174F4007000A3B49 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4783C6EF174F4007000A3B49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -216,11 +214,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				470C4F1D1757451E0047D9BE /* QuartzCore.framework in Frameworks */,
 				4783C6EE174F4007000A3B49 /* UIKit.framework in Frameworks */,
 				4783C6F0174F4007000A3B49 /* Foundation.framework in Frameworks */,
 				4783C6F2174F4007000A3B49 /* CoreGraphics.framework in Frameworks */,
-				47120274177AB8F300A6FBC9 /* libJoyhubAPI.a in Frameworks */,
+				4760753E1782C3F100413241 /* libJoyhubAPI.a in Frameworks */,
+				4760753F1782CAF700413241 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,47 +301,37 @@
 			path = btn;
 			sourceTree = "<group>";
 		};
-		47120250177AB8F100A6FBC9 /* (iOS)joyhub_sdk_1_5_1 */ = {
+		4760751B1782C3F100413241 /* headers */ = {
 			isa = PBXGroup;
 			children = (
-				47120268177AB8F300A6FBC9 /* libJoyhubAPI.a */,
-				4712025D177AB8F300A6FBC9 /* images */,
-				47120251177AB8F300A6FBC9 /* headers */,
-			);
-			path = "(iOS)joyhub_sdk_1_5_1";
-			sourceTree = "<group>";
-		};
-		47120251177AB8F300A6FBC9 /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				47120252177AB8F300A6FBC9 /* AFProgressHud.h */,
-				47120253177AB8F300A6FBC9 /* JoyhubAPI.h */,
-				47120254177AB8F300A6FBC9 /* JoyhubConsumePointConnection.h */,
-				47120255177AB8F300A6FBC9 /* JoyhubInitConnection.h */,
-				47120256177AB8F300A6FBC9 /* JoyhubNotifyInstalledAppConnection.h */,
-				47120257177AB8F300A6FBC9 /* JoyhubSendAchievementConnection.h */,
-				47120258177AB8F300A6FBC9 /* JoyhubSendscoreConnection.h */,
-				47120259177AB8F300A6FBC9 /* JoyhubUpdatePPIAppInfoConnection.h */,
-				4712025A177AB8F300A6FBC9 /* JoyHubWebViewController.h */,
-				4712025B177AB8F300A6FBC9 /* JoyHubWebViewController.xib */,
-				4712025C177AB8F300A6FBC9 /* PPIApp.h */,
+				4760751C1782C3F100413241 /* AFProgressHud.h */,
+				4760751D1782C3F100413241 /* JoyhubAPI.h */,
+				4760751E1782C3F100413241 /* JoyhubConsumePointConnection.h */,
+				4760751F1782C3F100413241 /* JoyhubInitConnection.h */,
+				476075201782C3F100413241 /* JoyhubNotifyInstalledAppConnection.h */,
+				476075211782C3F100413241 /* JoyhubSendAchievementConnection.h */,
+				476075221782C3F100413241 /* JoyhubSendscoreConnection.h */,
+				476075231782C3F100413241 /* JoyhubUpdatePPIAppInfoConnection.h */,
+				476075241782C3F100413241 /* JoyHubWebViewController.h */,
+				476075251782C3F100413241 /* JoyHubWebViewController.xib */,
+				476075261782C3F100413241 /* PPIApp.h */,
 			);
 			path = headers;
 			sourceTree = "<group>";
 		};
-		4712025D177AB8F300A6FBC9 /* images */ = {
+		476075271782C3F100413241 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				4712025E177AB8F300A6FBC9 /* joyhub_afhudbox.png */,
-				4712025F177AB8F300A6FBC9 /* joyhub_back_bt.png */,
-				47120260177AB8F300A6FBC9 /* joyhub_btn_controll.png */,
-				47120261177AB8F300A6FBC9 /* joyhub_btn_familiy.png */,
-				47120262177AB8F300A6FBC9 /* joyhub_btn_joyhub_setting.png */,
-				47120263177AB8F300A6FBC9 /* joyhub_btn_mypage.png */,
-				47120264177AB8F300A6FBC9 /* joyhub_btn_point_station.png */,
-				47120265177AB8F300A6FBC9 /* joyhub_navi_box.png */,
-				47120266177AB8F300A6FBC9 /* joyhub_refresh_bt.png */,
-				47120267177AB8F300A6FBC9 /* joyhub_toapp_bt.png */,
+				476075281782C3F100413241 /* joyhub_afhudbox.png */,
+				476075291782C3F100413241 /* joyhub_back_bt.png */,
+				4760752A1782C3F100413241 /* joyhub_btn_controll.png */,
+				4760752B1782C3F100413241 /* joyhub_btn_familiy.png */,
+				4760752C1782C3F100413241 /* joyhub_btn_joyhub_setting.png */,
+				4760752D1782C3F100413241 /* joyhub_btn_mypage.png */,
+				4760752E1782C3F100413241 /* joyhub_btn_point_station.png */,
+				4760752F1782C3F100413241 /* joyhub_navi_box.png */,
+				476075301782C3F100413241 /* joyhub_refresh_bt.png */,
+				476075311782C3F100413241 /* joyhub_toapp_bt.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -379,9 +367,9 @@
 		4783C6F3174F4007000A3B49 /* iOS_phonecasePrincess */ = {
 			isa = PBXGroup;
 			children = (
-				471B1CB617816A7800DF1535 /* SBTableAlert.h */,
-				471B1CB717816A7A00DF1535 /* SBTableAlert.m */,
-				47120250177AB8F100A6FBC9 /* (iOS)joyhub_sdk_1_5_1 */,
+				4760751B1782C3F100413241 /* headers */,
+				476075271782C3F100413241 /* images */,
+				476075321782C3F100413241 /* libJoyhubAPI.a */,
 				4712023B177AB7C300A6FBC9 /* btnImg */,
 				47120202177A9FD600A6FBC9 /* navbarImg */,
 				471201D01779929C00A6FBC9 /* tabbarImg */,
@@ -543,19 +531,19 @@
 				4712024D177AB7C400A6FBC9 /* 480x800_주문하기_btn_search_on.png in Resources */,
 				4712024E177AB7C400A6FBC9 /* 480x800_주문하기_btn_결제하기.png in Resources */,
 				4712024F177AB7C400A6FBC9 /* 480x800_주문하기_btn_결제하기_on.png in Resources */,
-				47120269177AB8F300A6FBC9 /* JoyHubWebViewController.xib in Resources */,
-				4712026A177AB8F300A6FBC9 /* joyhub_afhudbox.png in Resources */,
-				4712026B177AB8F300A6FBC9 /* joyhub_back_bt.png in Resources */,
-				4712026C177AB8F300A6FBC9 /* joyhub_btn_controll.png in Resources */,
-				4712026D177AB8F300A6FBC9 /* joyhub_btn_familiy.png in Resources */,
-				4712026E177AB8F300A6FBC9 /* joyhub_btn_joyhub_setting.png in Resources */,
-				4712026F177AB8F300A6FBC9 /* joyhub_btn_mypage.png in Resources */,
-				47120270177AB8F300A6FBC9 /* joyhub_btn_point_station.png in Resources */,
-				47120271177AB8F300A6FBC9 /* joyhub_navi_box.png in Resources */,
-				47120272177AB8F300A6FBC9 /* joyhub_refresh_bt.png in Resources */,
-				47120273177AB8F300A6FBC9 /* joyhub_toapp_bt.png in Resources */,
 				471B1CBE1781856100DF1535 /* IPhone5ViewController.xib in Resources */,
 				471B1CC31781935600DF1535 /* ConfirmBuyingViewController.xib in Resources */,
+				476075331782C3F100413241 /* JoyHubWebViewController.xib in Resources */,
+				476075341782C3F100413241 /* joyhub_afhudbox.png in Resources */,
+				476075351782C3F100413241 /* joyhub_back_bt.png in Resources */,
+				476075361782C3F100413241 /* joyhub_btn_controll.png in Resources */,
+				476075371782C3F100413241 /* joyhub_btn_familiy.png in Resources */,
+				476075381782C3F100413241 /* joyhub_btn_joyhub_setting.png in Resources */,
+				476075391782C3F100413241 /* joyhub_btn_mypage.png in Resources */,
+				4760753A1782C3F100413241 /* joyhub_btn_point_station.png in Resources */,
+				4760753B1782C3F100413241 /* joyhub_navi_box.png in Resources */,
+				4760753C1782C3F100413241 /* joyhub_refresh_bt.png in Resources */,
+				4760753D1782C3F100413241 /* joyhub_toapp_bt.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +649,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/iOS_phonecasePrincess/(iOS)joyhub_sdk_1_5_1\"",
+					"\"$(SRCROOT)/iOS_phonecasePrincess\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -680,6 +669,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/iOS_phonecasePrincess/(iOS)joyhub_sdk_1_5_1\"",
+					"\"$(SRCROOT)/iOS_phonecasePrincess\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
