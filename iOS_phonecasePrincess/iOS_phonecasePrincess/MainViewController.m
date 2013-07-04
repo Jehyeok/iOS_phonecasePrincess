@@ -52,11 +52,6 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-	return 4;
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -98,8 +93,8 @@
         UIActionSheet *phoneListActionSheet;
         
         phoneListActionSheet = [[UIActionSheet alloc] initWithTitle:@"내 사진으로 폰케이스 만들기" delegate:self cancelButtonTitle:@"취소" destructiveButtonTitle:nil otherButtonTitles:@"iPhone5", @"iPhone4/iPhone4S", @"Galaxy S3", @"Galaxy Note 2", nil];
-//        iPhone5ViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-//        [self presentViewController:iPhone5ViewController animated:YES completion:nil];
+        iPhone5ViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:iPhone5ViewController animated:YES completion:nil];
         [phoneListActionSheet showFromRect:CGRectMake(0, 0, 320, 548) inView:self.view animated:YES];
     }
     else if([sender isEqual:self.settingButton])
