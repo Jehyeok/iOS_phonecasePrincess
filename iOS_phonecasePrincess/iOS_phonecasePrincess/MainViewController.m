@@ -90,12 +90,8 @@
     }
     else if([sender isEqual:self.cameraButton])
     {
-        UIActionSheet *phoneListActionSheet;
-        
-        phoneListActionSheet = [[UIActionSheet alloc] initWithTitle:@"내 사진으로 폰케이스 만들기" delegate:self cancelButtonTitle:@"취소" destructiveButtonTitle:nil otherButtonTitles:@"iPhone5", @"iPhone4/iPhone4S", @"Galaxy S3", @"Galaxy Note 2", nil];
         iPhone5ViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         [self presentViewController:iPhone5ViewController animated:YES completion:nil];
-        [phoneListActionSheet showFromRect:CGRectMake(0, 0, 320, 548) inView:self.view animated:YES];
     }
     else if([sender isEqual:self.settingButton])
     {
@@ -111,27 +107,6 @@
 //        joyHubViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
 //        joyHubViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
         [self presentViewController:joyHubViewController animated:YES completion:nil];
-    }
-
-}
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if(buttonIndex == 0) // user selects iPhone5
-    {
-        NSLog(@"user selects iPhone5");
-    }
-    else if(buttonIndex == 1) // user selects iPhone4/iPhone4S
-    {
-        NSLog(@"user selects iPhone4");
-    }
-    else if(buttonIndex == 2) // user selects Galaxy S3
-    {
-        NSLog(@"user selects Gal 3");
-    }
-    else if(buttonIndex == 3) // user selects Galaxy Note 2
-    {
-        NSLog(@"user selects Gal Note 2");
     }
 }
 

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 //#import "JoyhubAPI.h"
 //#import "JoyHubWebViewController.h"
+#import "JoyHubViewController.h"
 
 @class MainViewController;
 
@@ -21,6 +22,7 @@
 //@property (strong, nonatomic) JoyhubAPI *joyhub;
 
 //@property (strong, nonatomic) JoyHubWebViewController *joyHubWebViewController;
+@property (strong, nonatomic) JoyHubViewController *joyHubViewController;
 
 @property (strong, nonatomic) IBOutlet UIWindow *window;
 

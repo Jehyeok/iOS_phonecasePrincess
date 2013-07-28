@@ -14,7 +14,7 @@
 #import "JoyHubViewController.h"
 #import "IPhone5ViewController.h"
 
-@interface MainViewController : UIViewController <UIActionSheetDelegate>
+@interface MainViewController : UIViewController <UIActionSheetDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
     UIButton *homeButton;
     UIButton *myButton;
@@ -26,8 +26,8 @@
     MyOrderListViewController *myOrderListViewController;
     MakeCustomCaseViewController *makeCustomCaseViewController;
     SettingViewController *settingViewController;
-    JoyHubViewController *joyHubViewController;
     IPhone5ViewController *iPhone5ViewController;
+    JoyHubViewController *joyHubViewController;
     
     UIView *contentView;
 }
@@ -48,8 +48,10 @@
 @property (strong, nonatomic) IBOutlet UIImageView *tabBarBgView;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 
+
 - (void)setButtonState:(UIButton*)sender;
 
 - (IBAction)buttonClicked:(UIButton*)sender;
+
 
 @end

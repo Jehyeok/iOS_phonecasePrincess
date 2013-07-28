@@ -14,20 +14,28 @@
 
 @implementation IPhone5ViewController
 
-@synthesize canvas, subCanvas, photoImageView, tappedImageView, confirmBuyingViewController;
+@synthesize canvas, subCanvas, photoImageView, tappedImageView;
+@synthesize confirmBuyingViewController, orderViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
         confirmBuyingViewController = [[ConfirmBuyingViewController alloc] initWithNibName:@"ConfirmBuyingViewController" bundle:nil];
+        orderViewController = [[OrderViewController alloc] initWithNibName:@"OrderViewController" bundle:nil];
+        photoImageView = [UIImageView alloc];
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
+    UIActionSheet *phoneListActionSheet;
+    
+    phoneListActionSheet = [[UIActionSheet alloc] initWithTitle:@"사진 가져오기" delegate:self cancelButtonTitle:@"취소" destructiveButtonTitle:nil otherButtonTitles:@"사진첩에서 가져오기", @"새로운 사진 찍기", nil];
+    
+    [phoneListActionSheet showFromRect:CGRectMake(0, 0, 320, 548) inView:self.view animated:YES];
+    
     subCanvas.layer.cornerRadius = 28;
     subCanvas.layer.masksToBounds = YES;
     self.title = @"나만의 케이스 만들기";
@@ -65,8 +73,8 @@
     tappedImageView.hidden = YES;
     tappedImageView.alpha = 1;
     
-    UIImage *photoImage = [UIImage imageNamed:@"seed.png"];
-    photoImageView = [[UIImageView alloc]initWithImage:photoImage];
+//    UIImage *photoImage = [UIImage imageNamed:@"seed.png"];
+//    photoImageView = [initWithImage:photoImage];
     photoImageView.frame = CGRectMake(0, 60, 200, 200);
     photoImageView.alpha = 1.0;
     
@@ -147,8 +155,60 @@
 - (IBAction)confirmBuying:(id)sender
 {
 //    [self.view addSubview:confirmBuyingViewController.view];
-    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 548)];
-    [self.view addSubview:v1];
+//    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 548)];
+//    [self.view addSubview:v1];
+    [self presentViewController:orderViewController animated:YES completion:nil];
+}
+
+/** camera **/
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 0) // user selects iPhone5
+    {
+        NSLog(@"select photo");
+        [self selectPhoto];
+    }
+    else if(buttonIndex == 1) // user selects iPhone4/iPhone4S
+    {
+        NSLog(@"new photo");
+        [self takePhoto];
+        
+    }
+    else if(buttonIndex == 2) // user selects Galaxy S3
+    {
+        NSLog(@"user selects cancel");
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+- (void)takePhoto {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (void)selectPhoto {
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
+    [self.photoImageView initWithImage:chosenImage];
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    
 }
 
 @end

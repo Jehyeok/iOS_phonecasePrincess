@@ -10,8 +10,9 @@
 #import <QuartzCore/QuartzCore.h>
 #import "OrderViewController.h"
 #import "ConfirmBuyingViewController.h"
+#import "OrderViewController.h"
 
-@interface IPhone5ViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface IPhone5ViewController : UIViewController <UIGestureRecognizerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 {
     CGFloat _lastScale;
     CGFloat _firstX;
@@ -31,8 +32,11 @@
 @property (strong, nonatomic) IBOutlet UIImageView *tappedImageView;
 
 @property (strong, nonatomic) ConfirmBuyingViewController *confirmBuyingViewController;
+@property (strong, nonatomic) OrderViewController *orderViewController;
 
 - (IBAction)backBtn:(id)sender;
 - (IBAction)confirmBuying:(id)sender;
+- (void)takePhoto;
+- (void)selectPhoto;
 
 @end

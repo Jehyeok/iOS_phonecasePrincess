@@ -7,15 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "JoyhubAPI.h"
-//#import "JoyHubWebViewController.h"
+#import "JoyhubAPI.h"
+#import "JoyHubWebViewController.h"
 
 @interface JoyHubViewController : UIViewController
 {
-//    JoyhubAPI *joyhub;
-//    JoyHubWebViewController *joyHubWebViewController;
+    JoyhubAPI *joyhub;
+    JoyHubWebViewController *joyHubWebViewController;
 }
-//@property (strong, nonatomic) JoyHubWebViewController *joyHubWebViewController;
+@property (strong, nonatomic) JoyHubWebViewController *joyHubWebViewController;
+@property (strong, nonatomic) JoyhubAPI *joyhub;
 
 - (IBAction)backBtn:(id)sender;
+- (IBAction)joyhubBtn:(id)sender;
 @end
