@@ -8,14 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
-#import "Address.h"
 
-@interface OrderViewController : UIViewController
+typedef enum {
+    none = 0,
+    postcd,
+    addrCheck,
+} check;
+
+@interface OrderViewController : UIViewController <NSXMLParserDelegate, UIActionSheetDelegate>
 {
-    UITextField *address;
-    NSMutableArray *itemList;
+    check checkElement;
     
-    NSMutableString *currentValue;
+    UITextField *address;
+    NSMutableString *xmlValue;
+    NSMutableArray *xmlParseData;
+    NSMutableDictionary *currectItem;
 }
 
 @property (nonatomic, retain) IBOutlet UIView *customerInfo;

@@ -24,7 +24,9 @@
     self = [super initWithNibName:@"OrderViewController" bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        self.currentValue = nil;
+        xmlParseData = [[NSMutableArray alloc] init];
+        xmlValue = [[NSMutableString alloc] init];
+        currectItem = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -87,8 +89,7 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     NSString *str = [[NSString alloc] initWithData:self.data_for_network encoding:0x80000000 + kCFStringEncodingDOSKorean];
-    // NSString *str = [[NSString alloc] initWithData:self.data_for_network encoding:-2147481280];
-    NSLog(@"%@",str);
+//    NSLog(@"%@",str);
     
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:self.data_for_network];
     
@@ -98,46 +99,69 @@
 
 - (void)parser:(NSXMLParser*)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
-    if([elementName isEqualToString:@"itemlist"])
+    if([elementName isEqualToString:@"item"])
     {
-        itemList = [[NSMutableArray alloc] init];
+        [xmlValue setString:@""];
+        checkElement = none;
     }
-    else if([elementName isEqualToString:@"item"])
+    else if ([elementName isEqualToString:@"postcd"])
     {
-        Address *addr = [[Address alloc] init];
+        checkElement = postcd;
+    }
+    else if ([elementName isEqualToString:@"address"])
+    {
+        checkElement = addrCheck;
+    }
+}
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+    if (checkElement == postcd)
+    {
+		[xmlValue setString:string];
+        checkElement = none;
+    }
+    else if (checkElement == addrCheck)
+    {
+		[xmlValue appendString:string];
+        checkElement = none;
     }
 }
 
-- (void)parser:(NSXMLParser*)parser foundCharacters:(NSString *)string
-{
-    NSString *checkBlank = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    
-    if(![checkBlank isEqualToString:@""])
-    {
-        if(!currentValue)
-        {
-            currentValue = [[NSMutableString alloc] initWithString:string];
-            [currentValue appendString:@"\n"];
-        }
-        else
-        {
-            [currentValue appendString:string];
-        }
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
+    if ([elementName isEqualToString:@"postcd"]) {
+		[currectItem setValue:[NSString stringWithString:xmlValue] forKey:elementName];
     }
+    else if ([elementName isEqualToString:@"address"]) {
+        [currectItem setValue:[NSString stringWithString:xmlValue] forKey:elementName];
+    }
+    else if ([elementName isEqualToString:@"item"]) {
+        [xmlParseData addObject:[NSDictionary dictionaryWithDictionary:currectItem]];
+	}
 }
 
-- (void)parser:(NSXMLParser*)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
-{
-    if ([elementName isEqualToString:@"itemlist"])
-    {
-        return;
-    }
-    
-    if ([elementName isEqualToString:@"item"])
-    {
 
+
+- (void)parserDidEndDocument:(NSXMLParser *)parser
+{
+    NSMutableArray *addrList = [[NSMutableArray alloc] init];
+    
+    UIActionSheet *addrListActionSheet;
+    addrListActionSheet.actionSheetStyle = UIActionSheetStyleAutomatic;
+    
+    addrListActionSheet = [[UIActionSheet alloc] initWithTitle:@"내 사진으로 폰케이스 만들기" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:nil, nil];
+    
+    for ( int i = 0 ;i < xmlParseData.count; i++ ) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@ %@",[[xmlParseData objectAtIndex:i] valueForKey:@"postcd"], [[xmlParseData objectAtIndex:i] valueForKey:@"address"]]);
         
+        [addrList addObject:[NSString stringWithFormat:@"%@ %@",[[xmlParseData objectAtIndex:i] valueForKey:@"postcd"], [[xmlParseData objectAtIndex:i] valueForKey:@"address"]]];
+        [addrListActionSheet addButtonWithTitle:[addrList objectAtIndex:i]];
     }
+    
+    [addrListActionSheet showFromRect:CGRectMake(0, 0, 320, 548) inView:self.view animated:YES];
 }
-@end
 
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+}
+
+@end
