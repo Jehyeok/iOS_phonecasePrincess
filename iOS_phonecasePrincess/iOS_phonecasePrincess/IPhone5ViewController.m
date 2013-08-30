@@ -32,7 +32,7 @@
 {
     UIActionSheet *phoneListActionSheet;
     
-    phoneListActionSheet = [[UIActionSheet alloc] initWithTitle:@"사진 가져오기" delegate:self cancelButtonTitle:@"취소" destructiveButtonTitle:nil otherButtonTitles:@"사진첩에서 가져오기", @"새로운 사진 찍기", nil];
+    phoneListActionSheet = [[UIActionSheet alloc] initWithTitle:@"사진 가져오기" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"사진첩에서 가져오기", @"새로운 사진 찍기", nil];
     
     [phoneListActionSheet showFromRect:CGRectMake(0, 0, 320, 548) inView:self.view animated:YES];
     
@@ -154,9 +154,6 @@
 
 - (IBAction)confirmBuying:(id)sender
 {
-//    [self.view addSubview:confirmBuyingViewController.view];
-//    UIView *v1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 548)];
-//    [self.view addSubview:v1];
     [self presentViewController:orderViewController animated:YES completion:nil];
 }
 

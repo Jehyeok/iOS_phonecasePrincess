@@ -90,8 +90,14 @@
     }
     else if([sender isEqual:self.cameraButton])
     {
-        iPhone5ViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentViewController:iPhone5ViewController animated:YES completion:nil];
+        UIActionSheet *phoneListActionSheet;
+        
+        phoneListActionSheet = [[UIActionSheet alloc] initWithTitle:@"내 사진으로 폰케이스 만들기" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"iPhone 5", @"iPhone 4/iPhone 4S", @"Galaxy S3", @"Galaxy Note 2", nil];
+        
+        [phoneListActionSheet showFromRect:CGRectMake(0, 0, 320, 548) inView:self.view animated:YES];
+
+//        iPhone5ViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//        [self presentViewController:iPhone5ViewController animated:YES completion:nil];
     }
     else if([sender isEqual:self.settingButton])
     {
@@ -107,6 +113,27 @@
 //        joyHubViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
 //        joyHubViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
         [self presentViewController:joyHubViewController animated:YES completion:nil];
+    }
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex == 0) // user selects iPhone5
+    {
+        iPhone5ViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentViewController:iPhone5ViewController animated:YES completion:nil];
+    }
+    else if(buttonIndex == 1) // user selects iPhone4/iPhone4S
+    {
+        NSLog(@"iPhone4");
+    }
+    else if(buttonIndex == 2) // user selects Galaxy S3
+    {
+        NSLog(@"Gal 3");
+    }
+    else if(buttonIndex == 3)
+    {
+        NSLog(@"gal note2");
     }
 }
 
