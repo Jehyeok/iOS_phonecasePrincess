@@ -24,7 +24,11 @@
     self.mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
 
 //    self.window.rootViewController = self.mainViewController;
+<<<<<<< HEAD
     self.window.rootViewController = self.mainViewController;
+=======
+    self.window.rootViewController = self.mainViewController.iPhone5ViewController.orderViewController;
+>>>>>>> cfab48e3dca89c3db531d1b73dccd4316ca11046
     [self.window makeKeyAndVisible];
     return YES;
 }

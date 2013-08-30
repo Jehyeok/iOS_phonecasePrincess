@@ -590,7 +590,10 @@
 				47120239177AA36E00A6FBC9 /* MakeCustomCaseViewController.m in Sources */,
 				471B1CBD1781856100DF1535 /* IPhone5ViewController.m in Sources */,
 				471B1CC21781935600DF1535 /* ConfirmBuyingViewController.m in Sources */,
+<<<<<<< HEAD
 				831362D817C714CE0091363C /* JSONKit.m in Sources */,
+=======
+>>>>>>> cfab48e3dca89c3db531d1b73dccd4316ca11046
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
